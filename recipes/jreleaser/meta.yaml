@@ -32,10 +32,10 @@ build:
   ignore_run_exports:       # [osx]
     - libcxx                # [osx]
   missing_dso_whitelist:
-    - "**/*.dylib"          # [osx]
-    - "**/*.so"             # [linux]
-    - "**/*.so.[0-9]"       # [linux]
-    - "**/*.dll"            # [win]
+    - "*/jreleaser-*/lib/*.dylib"  # [osx]
+    - "**/*.so"                    # [linux]
+    - "**/*.so.[0-9]"              # [linux]
+    - "**/*.dll"                   # [win]
 
 test:
   commands:
